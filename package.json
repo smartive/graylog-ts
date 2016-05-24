@@ -15,6 +15,11 @@
     "type": "git",
     "url": "git+ssh://git@git.smartive.ch:node-modules/graylog-ts.git"
   },
+  "keywords": [
+    "graylog",
+    "typescript",
+    "logging"
+  ],
   "author": "Christoph Bühler <christoph@smartive.ch>",
   "license": "MIT",
   "devDependencies": {
