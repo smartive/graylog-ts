@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '5'
+before_deploy:
+- npm run bootstrap
+- npm run build
+
+notifications:
+  email: false
+  slack:
+    secure: KQTUnS8BEMacKufEj8NDYhLUWHfJI8GJMgA3Ck5v+huA98dbRCjrdGz8WCz/L7oyXJxeJ+xrsKgfuWOggYHn2IrTjdJWkYncNJ3So77TCKbXIb0kzZa/XOrx04pewmqkmjhgTc15yjlwncRKneyA2cQrUhFms+1UHw0T79SXvr8geNCo0n6//VQbFUWazuDUQBODtfQ8/1+exyfJWEbj/a3ESQW5tmBW2zalXlyKNwPq4BrqQz7Ki7iiquvjuScC5G+8XsvcYODYa/xcRpqilqK92axtrBB0g/qJR9InNBUl43pDWpasbfIDq3bdVld8gw5/vlbxbzjH2nyp3b11puTy9moWBanA14XC7+TACHU9W9GFZHNFT/YVBIrA+HbDBsxCnQnWmDf+fxmAXQtn/nR4b3VcNOnLVNYKTybH3XXcrFZ7owLz6skuNXDU+rNQgu68LzzHN9UviGXnYFoaWtwi3l0KeMNlF09uKjcmeHUZK+r1wepWz7e5TUpFk2U7CebCjfMmBLqtvfEPMqaNiwAB5RPpwZwi8yMBS16DOAfEWEl2vmar8Mm6FMaSQLJ0Eeve4TqrD85IGVrD5HMjoyvxca5CRv9ue78bf/IGYmfKkojS1ZU7hI71z5b3tueeQfOs6e7HFwmc3Q0D2SbWuGkafX3gHZYKWGNsMwf+psw=
+    
+deploy:
+  provider: npm
+  email: christoph.buehler@bluewin.ch
+  api_key:
+    secure: R0uoGuOw5gJdmOOKCPSdspllABTkoT6C7nDCumqUNEYFR2hunhPLQ9XqjmvpQg/mx42YpTBdbyZdIdpLtaMj4I+QsC0MlEEksXmzFweQ2eEK/9QepopxCfhsmgFL7Q6klbFHtd/ACR7dTEFJgc4zKH2+k2y0D1Od1eQAbLkxCd0KdW6vsHJjUBwm5CzfzVZQ3DWzAptI+RigD48hxorRBF1a6RWreHkWCvczxORIUeGBj3zH5sd794Wvd0Ai71buIUKbJ/Qid0l90XB1jj2+9P7p9lbvjUVd8jL8FHdTkKZrt9XhqmXURoeVZuWn87qSFEGZItfTHs/k/J2EW9/dVXTuXb328ak+BZcw7JLOn0AjMx6PjRV0PnVg++VzL6bMijMGmsmIZFljMbBja3TglAN2BrNW6llav0wfeyMe7uJhtM82nhJHI9DnC1EhfY2b67Jlbxy2w/eKY0sN2E6r2ldoYOWg1wd58jQ9EOgiR+lfLBtiEI1aXdzjRnoacsveLaULyjCFS/HcDgEqqmePbpLkrkQSghAz9bL34HsnczeuSdtK+g7mWU0FtWD23B0Ni8HIisbgGn8z74gZqbtyHJrQD1Gex8S2BlY2i2ReVGQIUOucLOdWIHfRmOL3S3TPR9IAAelKTyWXYzEownN4J3AMD1+UktVSjaNLhP6HW+0=
+  on:
+    tags: true
+    repo: smartive/graylog-ts
