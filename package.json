@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@git.smartive.ch:node-modules/graylog-ts.git"
+    "url": "git+ssh://git@github.com:smartive/graylog-ts.git"
   },
   "keywords": [
     "graylog",
@@ -27,9 +27,6 @@
     "tslint": "^3.10.2",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
-  },
-  "publishConfig": {
-    "registry": "https://npm.smartive.ch"
   },
   "dependencies": {
     "graylog2": "^0.1.3",
