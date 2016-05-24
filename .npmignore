@@ -1,0 +1,20 @@
+# NodeJS
+logs
+*.log
+npm-debug.log*
+
+# Build artefacts
+build
+
+# Dependencies
+node_modules
+typings
+
+# Package files
+*.ts
+!*.d.ts
+*.js.map
+*.spec.js
+*.spec.ts
+*.spec.d.ts
+*.spec.js.map
