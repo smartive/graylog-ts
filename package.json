@@ -8,7 +8,8 @@
     "clean": "rimraf build",
     "develop": "npm run clean && tsc --sourceMap -w --pretty",
     "build": "npm run clean && tsc --outDir .",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "test": "echo 'no tests defined'"
   },
   "repository": {
     "type": "git",
