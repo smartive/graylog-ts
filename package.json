@@ -1,6 +1,6 @@
 {
   "name": "graylog-ts",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Graylog implementation for typescript",
   "main": "index.js",
   "scripts": {
