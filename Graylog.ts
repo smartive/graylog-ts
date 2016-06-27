@@ -122,6 +122,7 @@ export class Graylog {
             this.graylog._log(message, null, data, null, level);
         }
         if (this.graylogConfig.reportConsoleLevel >= level) {
+            data = JSON.stringify(data);
             switch (level) {
                 case LogLevel.Emergency:
                 case LogLevel.Alert:
